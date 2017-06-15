@@ -1,6 +1,9 @@
 {
-    "require": {
-        "leocavalcante/siler": "dev-master",
-        "erusev/parsedown": "dev-master"
-    }
+  "require": {
+    "leocavalcante/siler": "dev-master",
+    "erusev/parsedown": "dev-master"
+  },
+  "scripts": {
+    "serve": "php -S 0.0.0.0:8080 -t public/"
+  }
 }
