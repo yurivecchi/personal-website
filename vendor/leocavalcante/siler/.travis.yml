@@ -1,0 +1,16 @@
+language: php
+
+php:
+  - '7.0'
+  - '7.1'
+
+install:
+  - composer install
+
+script:
+  - ./vendor/bin/phpunit
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover ./coverage-clover.xml

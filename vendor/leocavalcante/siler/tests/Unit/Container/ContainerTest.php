@@ -1,0 +1,27 @@
+<?php
+
+namespace Siler\Test\Unit;
+
+use PHPUnit\Framework\TestCase;
+use Siler\Container;
+
+class ContainerTest extends TestCase
+{
+    public function testSet()
+    {
+        Container\set('test', 'test');
+        $this->assertContains('test', Container\Container::getInstance()->values);
+    }
+
+    public function testGet()
+    {
+        $this->assertEquals('test', Container\get('test'));
+    }
+
+    public function testHas()
+    {
+        Container\Container::getInstance()->values['test_has'] = new \stdClass();
+        $this->assertTrue(Container\has('test_has'));
+        $this->assertFalse(Container\has('test_hasnt'));
+    }
+}
