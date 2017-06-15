@@ -1,0 +1,123 @@
+[
+    {
+        "name": "leocavalcante/siler",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/leocavalcante/siler.git",
+            "reference": "fe3535d62c48193f944362edaae6b6a413f4f8d4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/leocavalcante/siler/zipball/fe3535d62c48193f944362edaae6b6a413f4f8d4",
+            "reference": "fe3535d62c48193f944362edaae6b6a413f4f8d4",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.0.0"
+        },
+        "require-dev": {
+            "cboden/ratchet": "*",
+            "gabordemooij/redbean": "*",
+            "lcobucci/jwt": "*",
+            "phpstan/phpstan": "*",
+            "phpunit/phpunit": "*",
+            "ratchet/pawl": "*",
+            "squizlabs/php_codesniffer": "*",
+            "twig/twig": "*",
+            "vlucas/phpdotenv": "*",
+            "webonyx/graphql-php": "*",
+            "zendframework/zend-diactoros": "*"
+        },
+        "suggest": {
+            "vlucas/phpdotenv": "Storing configuration in the environment is one of the tenets of a twelve-factor app."
+        },
+        "time": "2017-06-08T21:35:16+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Siler\\": "src/"
+            },
+            "files": [
+                "src/Container/Container.php",
+                "src/Diactoros/Diactoros.php",
+                "src/Dotenv/Dotenv.php",
+                "src/Functional/Functional.php",
+                "src/Functional/Monad/Monad.php",
+                "src/Graphql/Graphql.php",
+                "src/Http/Http.php",
+                "src/Http/Request.php",
+                "src/Http/Response.php",
+                "src/Jwt/Jwt.php",
+                "src/Ratchet/Ratchet.php",
+                "src/Route/Route.php",
+                "src/Siler.php",
+                "src/Twig/Twig.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "leocavalcante",
+                "email": "lc@leocavalcante.com"
+            }
+        ],
+        "description": "Siler is a set of general purpose high-level abstractions aiming an API for declarative programming in PHP.",
+        "keywords": [
+            "api",
+            "framework",
+            "functional",
+            "micro",
+            "router"
+        ]
+    },
+    {
+        "name": "erusev/parsedown",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/erusev/parsedown.git",
+            "reference": "728952b90a333b5c6f77f06ea9422b94b585878d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/erusev/parsedown/zipball/728952b90a333b5c6f77f06ea9422b94b585878d",
+            "reference": "728952b90a333b5c6f77f06ea9422b94b585878d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2017-05-14T14:47:48+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Parsedown": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Emanuil Rusev",
+                "email": "hello@erusev.com",
+                "homepage": "http://erusev.com"
+            }
+        ],
+        "description": "Parser for Markdown.",
+        "homepage": "http://parsedown.org",
+        "keywords": [
+            "markdown",
+            "parser"
+        ]
+    }
+]

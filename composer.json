@@ -1,0 +1,6 @@
+{
+    "require": {
+        "leocavalcante/siler": "dev-master",
+        "erusev/parsedown": "dev-master"
+    }
+}
